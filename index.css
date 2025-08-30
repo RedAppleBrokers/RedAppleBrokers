@@ -45,7 +45,7 @@ header {
 
 .main-nav ul{
   margin-right: 420px;
-  margin-top: -20px;
+  margin-top: -22px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 700;
 }
@@ -732,4 +732,5 @@ nav ul li a.btn {
 .contact-form button:hover {
   background-color: #e67e00;
 }
+
 
