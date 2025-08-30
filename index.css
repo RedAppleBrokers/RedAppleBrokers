@@ -164,11 +164,12 @@ nav ul li a.btn {
 
 .quote-options {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  max-width: 1200px;
 }
+
 
 .quote-box {
   width: 280px;
@@ -202,9 +203,17 @@ nav ul li a.btn {
   color: #333;
 }
 
-.interactive{
-  padding: 80px 80px;
-  padding-left: 10px;
+.interactive {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .quote-box {
+    width: 100%;
+    max-width: 320px;
+  }
 }
 
 /*Footer*/
@@ -723,3 +732,4 @@ nav ul li a.btn {
 .contact-form button:hover {
   background-color: #e67e00;
 }
+
