@@ -81,7 +81,7 @@ h1, h2 { color: #003471; }
 .content { padding: 2rem 1rem; max-width: 1000px; margin: 0 auto; }
 .row { display: flex; flex-wrap: wrap; margin-bottom: 2rem; align-items: center; }
 .col { flex: 1; padding: 1rem; }
-.col.image img { width: 100%; height: auto; border-radius: 4px; }
+.col.image img { width: 90%; height: auto; border-radius: 4px; }
 .text p { margin-bottom: 1rem; }
 
 
@@ -637,3 +637,4 @@ nav ul li a.btn {
     display: block;
   }
 }
+
