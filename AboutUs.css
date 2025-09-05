@@ -604,4 +604,36 @@ nav ul li a.btn {
 
 .contact-form button:hover {
   background-color: #e67e00;
+
+}
+
+/* Ensure flex containers wrap their items */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Base widths for desktop */
+.col.image, .col.text {
+  flex: 1;
+  min-width: 0;         /* Prevent flex items from overflowing */
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+  .row, .row.reverse {
+    flex-direction: column;
+  }
+  
+  /* Ensure images and text are full-width */
+  .col.image, .col.text {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .col.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }
