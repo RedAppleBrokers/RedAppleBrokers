@@ -18,6 +18,11 @@ body {
   font-size: 20px;
 }
 
+.top-strip a {
+  color: white;
+  text-decoration: none;
+}
+
 .contact-info {
   max-width: 1200px;
   margin: 0 auto;
@@ -732,6 +737,7 @@ nav ul li a.btn {
 .contact-form button:hover {
   background-color: #e67e00;
 }
+
 
 
 
