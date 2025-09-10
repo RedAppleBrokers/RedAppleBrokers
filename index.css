@@ -141,7 +141,7 @@ nav ul li a.btn {
 /*Logo*/
 .logo {
   position: absolute;
-  top: 45px;
+  top: 55px;
   left: 20px;
   z-index: 1000; /* Keeps it above other content */
 
@@ -737,6 +737,7 @@ nav ul li a.btn {
 .contact-form button:hover {
   background-color: #e67e00;
 }
+
 
 
 
