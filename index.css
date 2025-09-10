@@ -15,7 +15,7 @@ body {
   background-color: #f7931e; /* Match green color */
   color: white;
   padding: 8px 0;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .contact-info {
@@ -732,5 +732,6 @@ nav ul li a.btn {
 .contact-form button:hover {
   background-color: #e67e00;
 }
+
 
 
