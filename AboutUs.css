@@ -672,3 +672,9 @@ nav ul li a.btn {
     display: block;
   }
 }
+
+
+.footer-contact-hours a {
+    color: white;
+    text-decoration: underline;
+}
