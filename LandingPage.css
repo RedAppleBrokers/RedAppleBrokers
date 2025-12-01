@@ -781,3 +781,7 @@ nav ul li a.btn {
     right: 20px;
   }
 }
+
+.footer-contact-hours a {
+    color: white;
+}
