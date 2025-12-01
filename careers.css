@@ -826,3 +826,7 @@ nav ul li a.btn {
     padding: 20px 15px;
   }
 }
+
+.footer-contact-hours a {
+    color: white;
+}
