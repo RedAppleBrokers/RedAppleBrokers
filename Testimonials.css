@@ -714,4 +714,9 @@ nav ul li a.btn {
     height: auto;
     display: block;
   }
+
+}
+
+.footer-contact-hours a {
+    color: white;
 }
