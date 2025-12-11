@@ -308,6 +308,76 @@
 
 
 
+<!-- 🔐 FULL PAGE PASSWORD OVERLAY -->
+<div id="passwordOverlay">
+  <div class="password-container">
+    <h2>Enter Password</h2>
+    <input type="password" id="pagePassword" placeholder="Password">
+    <button onclick="checkFullPagePassword()">Enter</button>
+    <p id="passwordError" style="color: red; display: none;">Incorrect password</p>
+  </div>
+</div>
+
+<style>
+  /* Full page overlay */
+  #passwordOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .password-container {
+    text-align: center;
+    background: #f2f2f2;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+
+  .password-container input {
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .password-container button {
+    padding: 10px 20px;
+    background: #002b45;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .password-container button:hover {
+    background: #004a75;
+  }
+</style>
+
+<script>
+  function checkFullPagePassword() {
+    const input = document.getElementById("pagePassword").value;
+    const errorMsg = document.getElementById("passwordError");
+
+    if (input === "red123") {
+      document.getElementById("passwordOverlay").style.display = "none";
+    } else {
+      errorMsg.style.display = "block";
+    }
+  }
+</script>
+
+
+  
 </body>
 
 </html>
+
