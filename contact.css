@@ -465,7 +465,7 @@ footer {
 .mobile-menu {
   display: none;
   flex-direction: column;
-  background-color: #002b45;
+  background-color: #d90d1c;
   position: absolute;
   top: 70px; /* below header */
   right: 0;
@@ -482,7 +482,7 @@ footer {
 }
 
 .mobile-menu a:hover {
-  background-color: #004d7a;
+  background-color: #d90d1c;
 }
 
 .mobile-menu a:hover,
@@ -517,13 +517,85 @@ footer {
 
 /* Hover effect matches the links */
 .dropdown-btn:hover {
-  background-color: #004d7a;
+  background-color: #d90d1c;
   color: white;
 }
 
 /* Dropdown content matches submenu style */
 .dropdown-content a {
-  background-color: #003556;
+  background-color: #d90d1c;
+  color: white;
+  padding: 12px 30px; /* Indented to show it's a sub-item */
+  border-bottom: 1px solid #004080;
+  text-decoration: none;
+  text-align: right;
+}
+
+.dropdown-content a:hover {
+  background-color: #004d7a;
+}/* Dropdown Menu for Mobile */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #d90d1c;
+  position: absolute;
+  top: 70px; /* below header */
+  right: 0;
+  width: 100%;
+  text-align: right;
+  z-index: 1500;
+}
+
+.mobile-menu a {
+  padding: 15px 20px;
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid #004080;
+}
+
+.mobile-menu a:hover {
+  background-color: #d90d1c;
+}
+
+.mobile-menu a:hover,
+.dropdown-btn:hover {
+  background-color: #e6e6e6;
+}
+
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  padding-left: 10px;
+}
+
+.dropdown.active .dropdown-content {
+  display: flex;
+}
+
+/* Make dropdown button look like the links */
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: right;
+  width: 100%;
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+  border-bottom: 1px solid #004080;
+}
+
+/* Hover effect matches the links */
+.dropdown-btn:hover {
+  background-color: #d90d1c;
+  color: white;
+}
+
+/* Dropdown content matches submenu style */
+.dropdown-content a {
+  background-color: #d90d1c;
   color: white;
   padding: 12px 30px; /* Indented to show it's a sub-item */
   border-bottom: 1px solid #004080;

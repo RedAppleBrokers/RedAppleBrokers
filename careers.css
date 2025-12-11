@@ -477,7 +477,7 @@ footer {
 .mobile-menu {
   display: none;
   flex-direction: column;
-  background-color: #002b45;
+  background-color: #d90d1c;
   position: absolute;
   top: 70px; /* below header */
   right: 0;
@@ -494,7 +494,7 @@ footer {
 }
 
 .mobile-menu a:hover {
-  background-color: #004d7a;
+  background-color: #d90d1c;
 }
 
 .mobile-menu a:hover,
@@ -529,13 +529,13 @@ footer {
 
 /* Hover effect matches the links */
 .dropdown-btn:hover {
-  background-color: #004d7a;
+  background-color: #d90d1c;
   color: white;
 }
 
 /* Dropdown content matches submenu style */
 .dropdown-content a {
-  background-color: #003556;
+  background-color: #d90d1c;
   color: white;
   padding: 12px 30px; /* Indented to show it's a sub-item */
   border-bottom: 1px solid #004080;
