@@ -318,6 +318,53 @@
   });
 </script>
 
+<script>
+  // ---- SIMPLE PASSWORD PROTECTION (Front-end only) ----
+
+  // Set your password here:
+  const correctPassword = "red123";
+
+  // Create the lock screen
+  const lockScreen = document.createElement("div");
+  lockScreen.style.position = "fixed";
+  lockScreen.style.top = "0";
+  lockScreen.style.left = "0";
+  lockScreen.style.width = "100%";
+  lockScreen.style.height = "100%";
+  lockScreen.style.background = "white";
+  lockScreen.style.display = "flex";
+  lockScreen.style.flexDirection = "column";
+  lockScreen.style.justifyContent = "center";
+  lockScreen.style.alignItems = "center";
+  lockScreen.style.zIndex = "999999";
+  lockScreen.style.fontFamily = "Arial, sans-serif";
+
+  lockScreen.innerHTML = `
+      <h2 style="margin-bottom:15px;">Enter Password</h2>
+      <input type="password" id="sitePassword"
+             style="padding:10px;font-size:16px;width:250px;margin-bottom:10px;">
+      <button onclick="unlockSite()"
+              style="padding:10px 20px;font-size:16px;cursor:pointer;">
+        Submit
+      </button>
+      <p id="errorMsg" style="color:red;margin-top:10px;"></p>
+  `;
+
+  document.body.appendChild(lockScreen);
+
+  // Unlock Function
+  function unlockSite() {
+    const userInput = document.getElementById("sitePassword").value;
+    const errorMsg = document.getElementById("errorMsg");
+
+    if (userInput === correctPassword) {
+      lockScreen.style.display = "none";   // Hide lock screen
+    } else {
+      errorMsg.textContent = "Incorrect password. Try again.";
+    }
+  }
+</script>
  
 </body>
+
 </html>
