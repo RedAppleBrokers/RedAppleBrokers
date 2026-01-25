@@ -318,6 +318,86 @@
   });
 </script>
 
+
+<!-- Full Screen Password Overlay -->
+<div id="passwordOverlay">
+  <div class="password-box">
+    <h2>Enter Password</h2>
+    <input type="password" id="passwordInput" placeholder="Password">
+    <button onclick="checkPassword()">Enter</button>
+    <p id="passwordMessage"></p>
+  </div>
+</div>
+
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  #passwordOverlay {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+  }
+
+  .password-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+  }
+
+  .password-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 12px 0;
+  }
+
+  .password-box button {
+    width: 100%;
+    padding: 10px;
+    background: #d32f2f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  #passwordMessage {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+</style>
+
+<script>
+  function checkPassword() {
+    const input = document.getElementById("passwordInput").value;
+    const message = document.getElementById("passwordMessage");
+
+    if (input === "red123") {
+      document.getElementById("passwordOverlay").style.display = "none";
+      document.body.style.overflow = "auto";
+    } else {
+      message.style.color = "red";
+      message.innerText = "Incorrect password";
+    }
+  }
+</script>
+
+
+
+
+
+
  
 </body>
 </html>
