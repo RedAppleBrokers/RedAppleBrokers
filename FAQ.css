@@ -70,7 +70,7 @@ nav ul li a.btn {
 
 /* FAQ Section */
 .faq-section {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #002b45;
   max-width: 900px;
   margin: 50px auto;
@@ -95,7 +95,6 @@ nav ul li a.btn {
   margin-bottom: 20px;
 }
 
-/* Question Button */
 /* Question Button */
 .faq-question {
   background: none;
