@@ -241,6 +241,7 @@ footer {
   align-items: center;
   margin-top: 60px;
   margin-left: 50px;
+  display: none;
 }
 
 .footer-social span {
