@@ -950,6 +950,7 @@ header,
 
 /* Cookie Banner Styles */
 #cookie-banner {
+  display: none;
   position: fixed;
   bottom: 20px;
   left: 20px;
@@ -958,7 +959,6 @@ header,
   color: #fff;
   padding: 15px 20px;
   border-radius: 10px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 9999;
