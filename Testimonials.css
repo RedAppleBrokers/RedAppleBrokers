@@ -68,81 +68,14 @@ nav ul li a.btn {
 }
 
 
-.review-container {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  width: 100%;
-  max-width: 500px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
-  margin-top: 100px;
-}
-
-.review-form label {
-  display: block;
-  margin-top: 1rem;
-  font-weight: bold;
-}
-
-.review-form input[type="text"],
-.review-form textarea {
-  width: 100%;
-  padding: 0.5rem;
-  margin-top: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.review-form button {
-  margin-top: 1.5rem;
-  padding: 0.7rem 1.5rem;
-  background-color: #d90d1c;
-  border: none;
-  color: #fff;
-  font-size: 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.review-form button:hover {
-  background-color: #218838;
-}
-
-/* Star rating */
-.star-rating {
-  direction: rtl;
-  unicode-bidi: bidi-override;
-  display: flex;
-  gap: 0.3rem;
-  margin-top: 0.5rem;
-}
-
-.star-rating input[type="radio"] {
-  display: none;
-}
-
-.star-rating label {
-  font-size: 2rem;
-  color: #ccc;
-  cursor: pointer;
-}
-
-.star-rating input[type="radio"]:checked ~ label {
-  color: gold;
-}
-
-.star-rating label:hover,
-.star-rating label:hover ~ label {
-  color: gold;
-}
-
 
 .testimonials {
   margin-top: 4rem;
   padding: 2rem;
   background-color: #f9f9f9;
   border-radius: 8px;
+  padding-bottom: 200px;
+
 }
 
 .testimonials h2 {
@@ -150,30 +83,7 @@ nav ul li a.btn {
   margin-bottom: 2rem;
 }
 
-.testimonial {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 6px;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-}
 
-.testimonial h3 {
-  margin: 0;
-  font-size: 1.2rem;
-  color: #333;
-}
-
-.testimonial .stars {
-  color: gold;
-  font-size: 1.2rem;
-  margin: 0.5rem 0;
-}
-
-.testimonial p {
-  margin: 0.5rem 0 0;
-  color: #555;
-}
 
 
 
