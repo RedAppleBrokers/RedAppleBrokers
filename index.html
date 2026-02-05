@@ -332,23 +332,36 @@
 
 
 <script>
-  // Check if user already made a choice
-  if (!localStorage.getItem('cookieConsent')) {
-    document.getElementById('cookie-banner').style.display = 'flex';
+  const COOKIE_KEY = 'cookieConsent';
+  const TIME_KEY = 'cookieConsentTime';
+  const ONE_DAY = 24 * 60 * 60 * 1000; // 24 hours
+
+  const banner = document.getElementById('cookie-banner');
+  const consent = localStorage.getItem(COOKIE_KEY);
+  const consentTime = localStorage.getItem(TIME_KEY);
+
+  // Show banner if:
+  // - no consent yet
+  // - OR 24 hours have passed since last choice
+  if (!consent || !consentTime || (Date.now() - consentTime > ONE_DAY)) {
+    banner.style.display = 'flex';
   }
 
-  document.getElementById('accept-cookies').addEventListener('click', function() {
-    localStorage.setItem('cookieConsent', 'accepted');
-    document.getElementById('cookie-banner').style.display = 'none';
-    console.log('Accepted cookies'); // Here you can also send GA event
+  document.getElementById('accept-cookies').addEventListener('click', function () {
+    localStorage.setItem(COOKIE_KEY, 'accepted');
+    localStorage.setItem(TIME_KEY, Date.now());
+    banner.style.display = 'none';
+    console.log('Accepted cookies');
   });
 
-  document.getElementById('reject-cookies').addEventListener('click', function() {
-    localStorage.setItem('cookieConsent', 'rejected');
-    document.getElementById('cookie-banner').style.display = 'none';
-    console.log('Rejected cookies'); // Optional GA event
+  document.getElementById('reject-cookies').addEventListener('click', function () {
+    localStorage.setItem(COOKIE_KEY, 'rejected');
+    localStorage.setItem(TIME_KEY, Date.now());
+    banner.style.display = 'none';
+    console.log('Rejected cookies');
   });
 </script>
+
 
 
 
