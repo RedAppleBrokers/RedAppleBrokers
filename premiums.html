@@ -55,18 +55,21 @@
 
     <div class="container-question">
         <h2>Get a Quote</h2>
-        <form action="https://formspree.io/f/xpwlbvpr" method="post">
+        <form action="https://formspree.io/f/xkovpnoz" method="post">
             <input type="text" id="FName" name="First Name" placeholder="First Name" required>
             <input type="text" id="SName" name="Surname" placeholder="Surname" required>
             <input type="email" id="email" name="Email" placeholder="you@example.com" required>
             <input type="tel" id="phone" name="Contact Number" pattern="\d{11}" maxlength="11" inputmode="numeric" placeholder="Contact Number"
                 onkeypress="return event.charCode >= 48 && event.charCode <= 57"
                 oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,11);" required>
+            <input type="text" id="adress" name="Adress" placeholder="Address" required>
+            <input type="text" id="postcode" name="Postcode" placeholder="Postcode" required>
             <p>What type of insurance are you looking to renew?</p>
             <label><input type="radio" name="Insurance" value="landlord" required> Landlord</label><br>
+            <label><input type="radio" name="Insurance" value="home"> Home</label><br>
+            <label><input type="radio" name="Insurance" value="business"> Business</label><br>
             <label><input type="radio" name="Insurance" value="public-liability"> Public Liability</label><br>
             <label><input type="radio" name="Insurance" value="indemnity"> Professional Indemnity</label><br>
-            <label><input type="radio" name="Insurance" value="home"> Home</label><br>
 
             <label for="renewalDate">Select or enter your renewal date: </label>
             <input type="date" id="renewalDate" name="Renewal Date" required>
@@ -102,7 +105,7 @@
                             <!-- LEFT SIDE: Contact Info + Business Hours -->
                 <div class="footer-contact-hours">
                 <h4>Contact Information</h4>
-                <p>📍 Office 101, Chambers Business Centre, Unit 2, Chapel Road, OL8 4QQ</p>
+                <p>📍 Office 101, Chambers Business Centre, Unit 2, Chapel Road, Oldham, OL8 4QQ</p>
                 <p>📞 <a href="tel:03033301149"><b>03033 301149</b></a></p>
                 <p>📧 <a href="mailto:office@redapplebrokers.co.uk"><b>office@redapplebrokers.co.uk</b></a></p>
 
@@ -145,7 +148,8 @@
     </ul>
 
     <p class="footer-disclaimer">
-      Red Apple Brokers t/a Red Apple Brokers are an Appointed Representative of Coversure Insurance Services Ltd (reference number 309041) which is authorised and regulated by the Financial Conduct Authority. Register Address: Office 101, Chambers Business Centre, Unit 2 Chapel Road, OL8 4QQ . Registered in England No: 1048223 <br>
+      Red Apple Brokers Limited is an Appointed Representative of Coversure Insurance Services Ltd, reference 309041, which is authorised and regulated by the Financial Conduct Authority. These details can be checked on the Financial Conduct Authority Register at <a href="https://www.fca.org.uk/register">www.fca.org.uk/register</a>.<br>
+      Registered address: : Office 101 Chambers Business Centre, Unit 2 Chapel Road, Oldham , OL8 4QQ. Registered in England and Wales 16697365<br>
       &copy; 2026 Red Apple Brokers. All rights reserved.
     </p>
   </div>
@@ -157,7 +161,7 @@
       <span class="close-button" onclick="closePopup()">&times;</span>
       <h2>Subscribe to our Newsletter</h2>
       
-      <form action="https://formspree.io/f/xqadaqqp" method="post" id="newsletterForm">
+      <form action="https://formspree.io/f/mbdapjdq" method="post" id="newsletterForm">
         <label for="firstName">First Name:</label>
         <input type="text" id="firstName" name="firstName" required>
 

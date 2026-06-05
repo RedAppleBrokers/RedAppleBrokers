@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Red Apple Brokers – Insurance Brokers in UK</title>
+  <title>Insurance Broker Oldham | Red Apple Brokers</title>
+  <meta name="description" content="Red Apple Brokers are trusted insurance brokers based in Oldham, Greater Manchester. We help landlords, homeowners and businesses find the right insurance cover across the UK.">
   <link rel="stylesheet" href="LandingPage.css" />
 </head>
 <body>
@@ -119,7 +120,6 @@
       </div>
     </div>
   </section>
-  
 
 
 
@@ -146,13 +146,10 @@
       <div class="icon">🏢</div>
       <h3>Visit Us</h3>
       <p>Office 101, Chambers Business Centre</p>
-      <p>Unit 2, Chapel Road, OL8 4QQ</p>
+      <p>Unit 2, Chapel Road, Oldham, OL8 4QQ</p>
     </div>
   </div>
 </section>
-
-
-
 
 
         <!-- Footer -->
@@ -163,7 +160,7 @@
                             <!-- LEFT SIDE: Contact Info + Business Hours -->
                 <div class="footer-contact-hours">
                 <h4>Contact Information</h4>
-                <p>📍 Office 101, Chambers Business Centre, Unit 2, Chapel Road, OL8 4QQ</p>
+                <p>📍 Office 101, Chambers Business Centre, Unit 2, Chapel Road, Oldham, OL8 4QQ</p>
                 <p>📞 <a href="tel:03033301149"><b>03033 301149</b></a></p>
                 <p>📧 <a href="mailto:office@redapplebrokers.co.uk"><b>office@redapplebrokers.co.uk</b></a></p>
 
@@ -192,9 +189,10 @@
     <div class="footer-newsletter">
       <h4>Sign up to our email</h4>
       <p>Receive exclusive deals, practical tips and news about our newest products and special offers delivered directly to your inbox. Sign up today!</p>
-      <button type="button">Sign Up</button>
+      <button type="buttons">Sign Up</button>
     </div>
   </div>
+
 
   <div class="footer-bottom">
     <ul class="footer-secondary-links">
@@ -206,7 +204,8 @@
     </ul>
 
     <p class="footer-disclaimer">
-      Red Apple Brokers t/a Red Apple Brokers are an Appointed Representative of Coversure Insurance Services Ltd (reference number 309041) which is authorised and regulated by the Financial Conduct Authority. Register Address: Office 101, Chambers Business Centre, Unit 2 Chapel Road, OL8 4QQ . Registered in England No: 1048223 <br>
+      Red Apple Brokers Limited is an Appointed Representative of Coversure Insurance Services Ltd, reference 309041, which is authorised and regulated by the Financial Conduct Authority. These details can be checked on the Financial Conduct Authority Register at <a href="https://www.fca.org.uk/register">www.fca.org.uk/register</a>.<br>
+      Registered address: : Office 101 Chambers Business Centre, Unit 2 Chapel Road, Oldham , OL8 4QQ. Registered in England and Wales 16697365<br>
       &copy; 2026 Red Apple Brokers. All rights reserved.
     </p>
   </div>
@@ -218,7 +217,7 @@
       <span class="close-button" onclick="closePopup()">&times;</span>
       <h2>Subscribe to our Newsletter</h2>
       
-      <form action="https://formspree.io/f/xqadaqqp" method="post" id="newsletterForm">
+      <form action="https://formspree.io/f/mbdapjdq" method="post" id="newsletterForm">
         <label for="firstName">First Name:</label>
         <input type="text" id="firstName" name="firstName" required>
 
@@ -361,100 +360,22 @@
     console.log('Rejected cookies');
   });
 </script>
+</body>
 
-
-<!-- Full Screen Password Overlay -->
-<div id="passwordOverlay">
-  <div class="password-box">
-    <h2>Enter Password</h2>
-    <input type="password" id="passwordInput" placeholder="Password">
-    <button onclick="checkPassword()">Enter</button>
-    <p id="passwordMessage"></p>
-  </div>
-</div>
-
-<style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  #passwordOverlay {
-    position: fixed;
-    inset: 0;
-    width: 100vw;
-    height: 100vh;
-    background: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 999999;
-  }
-
-  .password-box {
-    background: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    text-align: center;
-    width: 300px;
-  }
-
-  .password-box input {
-    width: 100%;
-    padding: 10px;
-    margin: 12px 0;
-  }
-
-  .password-box button {
-    width: 100%;
-    padding: 10px;
-    background: #d32f2f;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-
-  #passwordMessage {
-    margin-top: 10px;
-    font-size: 14px;
-  }
-</style>
-
-<script>
-  function checkPassword() {
-    const input = document.getElementById("passwordInput").value;
-    const message = document.getElementById("passwordMessage");
-
-    if (input === "red123") {
-      document.getElementById("passwordOverlay").style.display = "none";
-      document.body.style.overflow = "auto";
-    } else {
-      message.style.color = "red";
-      message.innerText = "Incorrect password";
-    }
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "InsuranceAgency",
+  "name": "Red Apple Brokers",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Office 101, Chambers Business Centre, Unit 2 Chapel Road",
+    "addressLocality": "Oldham",
+    "postalCode": "OL8 4QQ",
+    "addressCountry": "GB"
+  },
+  "telephone": "03033 301149",
+  "url": "https://www.redapplebrokers.co.uk"
   }
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-</body>
 </html>

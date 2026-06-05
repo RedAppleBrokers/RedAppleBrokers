@@ -56,14 +56,66 @@
 
 
 
-
-<section class="testimonials">
-  <h2>What Our Customers Say</h2>
-
-  
-
-  <!-- Add more testimonials manually here -->
+    <section class="testimonials">
+      <h2>What Our Customers Say</h2>
+    <div id="feefo-service-review-widgetId" class="feefo-review-widget-service">
+    <script>
+      (function (w) {
+      var feefoWidgetScript = document.createElement('script');
+      feefoWidgetScript.setAttribute('async', 'async');
+      feefoWidgetScript.setAttribute('src', '//register.feefo.com//feefo-widget-v2/js/feefo-widget.js');
+      feefoWidgetScript.setAttribute('type', 'text/javascript');
+      feefoWidgetScript.onload = function () {
+        if (typeof w.feefoWidgetInstance === 'undefined') {
+          if (typeof feefoWidget !== 'undefined') {
+            w.feefoWidgetInstance = feefoWidget(w.feefoWidgetInstanceConfig);
+          }
+        }
+      };
+      w.feefoWidgetInstanceConfig = {
+                                      assetUrl: '//register.feefo.com//feefo-widget-v2',
+                                      debug: false,
+                                      hosts: {
+                                        api: 'api.feefo.com/api',
+                                        widget: 'register.feefo.com',
+                                        collector: 'collect.feefo.com'
+                                      },
+                                      merchantId: 'red-apple-brokers',
+                                      protocol: 'https',
+                                      source: 'javascript',
+                                      tags: '',
+                                      externalCta: '',
+                                      versionDir: 'feefo-widget-v2',
+                                      isMigratedMerchant: 'false'
+                                    };
+      w.FeefoWidgetSources = {
+        onPage: 'APP',
+        slideOut: 'APP',
+        popupReviews: 'APP',
+        productStars: 'LEGACY',
+        optionalProductStars: 'LEGACY',
+        mediaGallery: 'LEGACY',
+        serviceCarousel: 'LEGACY',
+        questionDisplay: 'LEGACY',
+        questionForm: 'LEGACY',
+        aaeBadge: 'LEGACY',
+        highlightedTopics: 'LEGACY',
+        highlightedSnippets: 'LEGACY',
+      };
+      document.head.appendChild(feefoWidgetScript);
+      var widgetsAppEnabled = true;
+      if (widgetsAppEnabled) {
+        var feefoWidgetsAppScript = document.createElement('script');
+        feefoWidgetsAppScript.setAttribute('async', 'async');
+        feefoWidgetsAppScript.setAttribute('src', 'https://api.feefo.com/feefo-widgets-data/loader/widgets/red-apple-brokers');
+        feefoWidgetsAppScript.setAttribute('type', 'text/javascript');
+        document.head.appendChild(feefoWidgetsAppScript);
+      }
+    })(window);
+    </script>
+    </div>
 </section>
+
 
         <!-- Footer -->
 <footer class="site-footer">
@@ -73,7 +125,7 @@
                             <!-- LEFT SIDE: Contact Info + Business Hours -->
                 <div class="footer-contact-hours">
                 <h4>Contact Information</h4>
-                <p>📍 Office 101, Chambers Business Centre, Unit 2, Chapel Road, OL8 4QQ</p>
+                <p>📍 Office 101, Chambers Business Centre, Unit 2, Chapel Road, Oldham, OL8 4QQ</p>
                 <p>📞 <a href="tel:03033301149"><b>03033 301149</b></a></p>
                 <p>📧 <a href="mailto:office@redapplebrokers.co.uk"><b>office@redapplebrokers.co.uk</b></a></p>
 
@@ -116,7 +168,8 @@
     </ul>
 
     <p class="footer-disclaimer">
-      Red Apple Brokers t/a Red Apple Brokers are an Appointed Representative of Coversure Insurance Services Ltd (reference number 309041) which is authorised and regulated by the Financial Conduct Authority. Register Address: Office 101, Chambers Business Centre, Unit 2 Chapel Road, OL8 4QQ . Registered in England No: 1048223 <br>
+      Red Apple Brokers Limited is an Appointed Representative of Coversure Insurance Services Ltd, reference 309041, which is authorised and regulated by the Financial Conduct Authority. These details can be checked on the Financial Conduct Authority Register at <a href="https://www.fca.org.uk/register">www.fca.org.uk/register</a>.<br>
+      Registered address: : Office 101 Chambers Business Centre, Unit 2 Chapel Road, Oldham , OL8 4QQ. Registered in England and Wales 16697365<br>
       &copy; 2026 Red Apple Brokers. All rights reserved.
     </p>
   </div>
@@ -128,7 +181,7 @@
       <span class="close-button" onclick="closePopup()">&times;</span>
       <h2>Subscribe to our Newsletter</h2>
       
-      <form action="https://formspree.io/f/xqadaqqp" method="post" id="newsletterForm">
+      <form action="https://formspree.io/f/mbdapjdq" method="post" id="newsletterForm">
         <label for="firstName">First Name:</label>
         <input type="text" id="firstName" name="firstName" required>
 
